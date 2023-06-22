@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baloo</title>
+    <!-- link para icono en pestaña -->
+    <link rel="shortcut icon" href="/assets/svg/bear-icon.svg" type="svg">
+    <!-- link para estilos generales: "style.css" -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- link para responsividad y estilos especificos de la resolucion: "responsive.css"  -->
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <!-- link para animaciones: "animaciones.css" -->
+    <link rel="stylesheet" href="/assets/css/animaciones.css">
+    <!-- link para microinteracciones: "microinteracciones.css" -->
+    <link rel="stylesheet" href="/assets/css/microinteracciones.css">
+    <!-- link para iconos desde box-icons: -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<header>
+    <div class="offer">
+        <p> 25% OFF EN COMPRAS POR SHOP ONLINE | EXCLUYE PRODUCTOS EN PROMOCION</p>
+    </div>
+    <div class="logo">
+        <img class="logo-img" src="/assets/svg/bear-icon.svg" alt="foto de oso, logo de la empresa">
+        <span class="line"></span>
+        <span class="logo-title">Baloo</span>
+    </div>
+    <div class="navbar">
+        <!-- BARRA DE NAVEGACION -->
+        <label for="navbar-toggle" class="navbar-toggle-label">
+            <i class='bx bx-menu'></i>
+            <!-- icono del menu desplegable -->
+        </label>
+        <input type="checkbox" id="navbar-toggle" />
+        <div class="navbar-dropdown menu">
+            <!-- ".navbar-dropdown": envuelve a los elementos de la navbar que integraran un menu desplegable para dispositivos con una resolucion menor -->
+            <input type="search" name="search" id="navbar-search" placeholder="Buscar">
+            <ul class="navbar-list">
+                <li class="navbar-list-item"><a href="">Inicio</a></li>
+                <li class="navbar-list-item"><a href="">Nosotros</a></li>
+                <li class="navbar-list-item"><a href="">Productos</a></li>
+                <li class="navbar-list-item"><a href="">Contacto</a></li>
+            </ul>
+            <div class="login">
+                <label for="login-toggle" class="login-toggle-label">
+                    <!-- icono de login y registro para usuarios -->
+                    <i class='bx bxs-user'></i>
+                </label>
+                <input type="checkbox" id="login-toggle">
+                <ul class="login-dropdown">
+                    <li class="login-dropdown-item"><a href="">Crear Cuenta</a></li>
+                    <li class="login-dropdown-item"><a href="">Iniciar Sesion</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="cart">
+            <label for="cart-toggle">
+                <i class='bx bxs-cart'></i>
+            </label>
+            <input type="checkbox" id="cart-toggle">
+            <div class="cart-dropdown menu">
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+
+</body>
+
+</html>
