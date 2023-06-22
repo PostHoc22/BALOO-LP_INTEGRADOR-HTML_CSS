@@ -24,11 +24,11 @@
 /** items de la navbar */
 .navbar-list-item a {
   color: var(--text-gray-dark);
-  transition: 0.3s ease-out all;
+  transition: 0.1s ease-out all;
 }
 .navbar-list-item a:hover {
   color: var(--text-pink);
-  transition: 0.3s ease-out all;
+  transition: 0.1s ease-out all;
 }
 
 /** items de login user */

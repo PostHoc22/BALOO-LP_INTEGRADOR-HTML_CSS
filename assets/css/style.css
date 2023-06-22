@@ -178,7 +178,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 5%;
+  width: 10%;
 }
 /* checkbox  */
 #cart-toggle {

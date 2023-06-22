@@ -7,74 +7,83 @@
 
 /** para tablets */
 /** para celular */
-@media (max-width: 679px) {
+@media (max-width: 711px) {
   .navbar-toggle-label {
     display: block;
     padding: 0 0.5rem;
+    z-index: 2;
   }
   .navbar {
     position: relative;
     justify-content: space-between;
     align-items: start;
-    /* position: relative; */
-  }
-  #navbar-toggle:checked + .navbar-dropdown {
-    display: none;
+    position: relative;
   }
   .navbar-dropdown {
-    /* position: absolute; */
-    /* top: 0; */
-    border: solid 1px blue;
-    width: 50%;
-    flex-direction: column;
-    align-items: start;
+    position: absolute;
+    top: 0;
+    display: none;
+    border: solid 1px rgb(18, 27, 150);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     z-index: 1;
   }
+  #navbar-toggle:checked ~ .navbar-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   #navbar-search {
-    width: 90%;
-    margin: auto 0.5rem;
+    width: 50%;
+    margin: 1.2rem 0 0.5rem 0;
+    text-align: center;
   }
   .navbar-list {
     border: solid 2px green;
     background-color: blueviolet;
     width: 100%;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: start;
     gap: 0;
   }
   .navbar-list-item {
     width: 100%;
-    padding: 0.5rem 0.9rem;
+    padding: 0.5rem 0rem;
     background-color: aqua;
-    text-align: left;
+    text-align: center;
   }
   .login {
     border-color: tomato;
     width: 100%;
-    justify-content: start;
-    height: 3rem;
+    justify-content: center;
+    align-items: start;
+    height: 6rem;
     padding-bottom: 0.5rem;
   }
   .login-toggle-label {
     padding: 0 0.5rem;
   }
+  .bx-user {
+    font-size: 4rem;
+  }
   .login-dropdown {
     left: 3rem;
-    /* transform: translateX(-500%); */
+    transform: translateY(-3000%);
     transition: 2s all;
   }
   .login-dropdown-item {
     opacity: 1;
     width: 6rem;
     border: solid goldenrod;
+    transform: translateX(230%);
   }
   .menu {
-    background-color: chartreuse;
+    /* width: 100%; */
+    /* background-color: chartreuse; */
   }
 }
 
-@media (max-width: 240px) {
+@media (max-width: 301px) {
   .logo-img {
     width: 6rem;
     height: 5rem;
