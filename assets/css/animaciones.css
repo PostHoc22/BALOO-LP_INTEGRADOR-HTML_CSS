@@ -13,10 +13,10 @@
     opacity: 0;
   }
 }
-/* desplazar hacia la izquierda a los items de "menu-login" cuando esten activados y darles una visibilidad en forma gradual */
-@keyframes login-items-slide-left {
+/* desplazar hacia la derecha a los items de "menu-login" cuando esten activados y darles una visibilidad en forma gradual */
+@keyframes login-items-slide-right {
   from {
-    transform: translateX(75%);
+    transform: translateX(-75%);
     opacity: 0;
   }
   to {
@@ -24,28 +24,28 @@
     opacity: 1;
   }
 }
-/* desplazar hacia la derecha a los items de "menu-login" cuando esten desactivados y darles una visibilidad en forma gradual */
-@keyframes login-items-slide-right {
+/* desplazar hacia la izquierda a los items de "menu-login" cuando esten desactivados y darles una opacidad en forma gradual */
+@keyframes login-items-slide-left {
   from {
     transform: translateX(0);
     opacity: 1;
   }
   to {
-    transform: translateX(75%);
+    transform: translateX(-75%);
     opacity: 0;
   }
 }
 /** llamados para resoluciones mayores a 711px : */
-/* para desplazar menu-login hacia la izquierda */
+/* para desplazar items de menu-login hacia la derecha */
 #login-toggle:checked + .login-dropdown {
-  animation: login-items-slide-left 1s ease-out;
+  animation: login-items-slide-right 1s ease-out;
   transform: translateX(0);
 }
-/* para desplazar menu-login hacia la derecha */
+/* para desplazar items de menu-login hacia la izquierda */
 .login-dropdown {
-  animation: login-items-slide-right 1s ease-out;
+  animation: login-items-slide-left 1s ease-out;
 }
-/* para dar opacidad a los items menu-logn al recargar la pagina  */
+/* para dar opacidad a los items menu-login al recargar la pagina  */
 .login-dropdown-item {
   animation: opacity-loadPage-toogle 2s ease-in;
 }
@@ -66,22 +66,22 @@
   /* desplazar hacia la derecha a los items de "menu-login" cuando esten activados y darles una visibilidad en forma gradual */
   @keyframes login-items-slide-right {
     from {
-      transform: translateY(-100%);
+      transform: translateX(-80%);
       opacity: 0;
     }
     to {
-      transform: translateY(80%);
+      transform: translateX(-10%);
       opacity: 1;
     }
   }
-  /* desplazar menu-login hacia la izquierda */
+  /* desplazar menu-login hacia la izquierda con transparencia en el proceso */
   @keyframes login-items-slide-left {
     from {
-      transform: translateY(80%);
+      transform: translateX(-10%);
       opacity: 1;
     }
     to {
-      transform: translateY(-100%);
+      transform: translateX(-80%);
       opacity: 0;
     }
   }
@@ -89,13 +89,13 @@
   /* para desplazar menu-login hacia la derecha */
   #login-toggle:checked + .login-dropdown {
     animation: login-items-slide-right 1.5s ease-out;
-    transform: translateY(80%);
+    transform: translateX(-10%);
   }
   /* para desplazar menu-login hacia la izquierda */
   .login-dropdown {
     animation: login-items-slide-left 1.5s ease-in-out;
   }
-  /* para dar opacidad a los items menu-logn al recargar la pagina  */
+  /* para dar opacidad a los items menu-login al recargar la pagina  */
   .login-dropdown-item {
     animation: opacity-loadPage-toogle 2s ease-in;
   }

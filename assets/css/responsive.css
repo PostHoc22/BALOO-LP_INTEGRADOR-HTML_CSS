@@ -7,6 +7,7 @@
 
 /** para tablets */
 /** para celular */
+/* ? HEADER - INICIO */
 @media (max-width: 711px) {
   .navbar-toggle-label {
     display: block;
@@ -25,18 +26,19 @@
     display: none;
     border: solid 1px rgb(18, 27, 150);
     width: 100%;
+    height: max-content;
     justify-content: center;
     align-items: center;
     z-index: 1;
   }
-  #navbar-toggle:checked ~ .navbar-dropdown {
+  #navbar-toggle:checked + .navbar-dropdown {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   #navbar-search {
     width: 50%;
-    margin: 1.2rem 0 0.5rem 0;
+    margin: 1.2rem 0;
     text-align: center;
   }
   .navbar-list {
@@ -56,9 +58,9 @@
     border-color: tomato;
     width: 100%;
     justify-content: center;
-    align-items: start;
-    height: 6rem;
+    align-items: center;
     padding-bottom: 0.5rem;
+    padding-left: 6rem;
   }
   .login-toggle-label {
     padding: 0 0.5rem;
@@ -67,19 +69,22 @@
     font-size: 4rem;
   }
   .login-dropdown {
-    left: 3rem;
-    transform: translateY(-3000%);
     transition: 2s all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    transform: translateY(-3000%);
   }
   .login-dropdown-item {
-    opacity: 1;
     width: 6rem;
     border: solid goldenrod;
-    transform: translateX(230%);
+    color: tomato;
+    padding-left: 0;
   }
   .menu {
-    /* width: 100%; */
-    /* background-color: chartreuse; */
+    width: 100%;
+    background-color: #faf2f1;
   }
 }
 
@@ -91,7 +96,54 @@
   .logo-title {
     font-size: 2rem;
   }
-  .login-dropdown {
-    transform: translateY(-2000%);
+  .login-dropdown-item {
+    width: 5rem;
+  }
+  .login-dropdown-item a {
+    /* transform: translateY(-2000%); */
+    font-size: 0.6rem;
   }
 }
+
+/* ? HEADER - FINAL */
+
+/* ? MAIN - INICIO  */
+
+/* TODO / SECTION HERO - INICIO */
+@media (max-width: 599px) {
+  .hero-banner-data-slogan {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 490px) {
+  .hero-banner-data-title {
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
+  }
+  @media (max-width: 384px) {
+    .hero-banner-data {
+      justify-content: space-between;
+    }
+    .hero-banner-data-title {
+      font-size: 3rem;
+      padding-top: 0.1rem;
+    }
+    .hero-banner-data-slogan {
+      font-size: 1rem;
+      padding-top: 0.1rem;
+    }
+  }
+  @media (max-width: 300px) {
+    .hero-banner-data-title {
+      font-size: 2.5rem;
+    }
+    .hero-banner-data-slogan {
+      font-size: 0.6rem;
+      line-height: 0.7rem;
+      padding-top: 1rem;
+    }
+  }
+}
+/* TODO / SECTION HERO - FINAL */
+
+/* ? MAIN - FINAL */
