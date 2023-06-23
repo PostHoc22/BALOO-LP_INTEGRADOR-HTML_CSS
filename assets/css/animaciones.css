@@ -1,5 +1,4 @@
-/** ANIMACIONES */
-
+/* ! HEADER - INICIO */
 /*?--- ANIMACION PARA MENU-LOGIN - INICIO --- */
 /* todo: para resoluciones mayores a 679px - inicio */
 /** declaraciones para resoluciones mayores a 711px: */
@@ -100,5 +99,46 @@
     animation: opacity-loadPage-toogle 2s ease-in;
   }
 }
-/* todo: para resoluciones hasta 711px - inicio */
+/* todo: para resoluciones hasta 711px - final */
 /*?--- ANIMACION PARA MENU-LOGIN - FINAL --- */
+/* ! HEADER - FINAL */
+
+/* ! MAIN - INICIO */
+/*?--- ANIMACION PARA SECTION HERO - INICIO --- */
+/** declaraciones: */
+/* para desplazar de izquierda a derecha el div con info dentro de imagen de portada (section hero) */
+@keyframes slide-right-hero-banner-data {
+  from {
+    opacity: 0;
+    left: -34%;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    left: 25%;
+  }
+}
+/* para desplazar de arriba hacia abajao al titulo y eslogan de la portada (section hero) */
+@keyframes slide-top-hero-banner-data-title {
+  from {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+/** llamados: */
+.hero-banner-data {
+  animation: slide-right-hero-banner-data 2s ease-in-out;
+}
+.hero-banner-data-title,
+.hero-banner-data-slogan {
+  opacity: 0;
+  animation: slide-top-hero-banner-data-title 1s linear forwards;
+  animation-delay: 2s;
+}
+/*?--- ANIMACION PARA SECTION HERO - FINAL --- */
