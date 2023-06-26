@@ -7,19 +7,22 @@
 
 /** para tablets */
 /** para celular */
-/* ? HEADER - INICIO */
+
 @media (max-width: 711px) {
+  /* ? ---------- HEADER ---------- */
   .navbar-toggle-label {
     display: block;
     padding: 0 0.5rem;
     z-index: 2;
   }
+  /* ? ---------- HEADER ---------- */
   .navbar {
     position: relative;
     justify-content: space-between;
     align-items: start;
     position: relative;
   }
+  /* ? ---------- HEADER ---------- */
   .navbar-dropdown {
     position: absolute;
     top: 0;
@@ -31,16 +34,19 @@
     align-items: center;
     z-index: 1;
   }
+  /* ? ---------- HEADER ---------- */
   #navbar-toggle:checked + .navbar-dropdown {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  /* ? ---------- HEADER ---------- */
   #navbar-search {
     width: 50%;
     margin: 1.2rem 0;
     text-align: center;
   }
+  /* ? ---------- HEADER ---------- */
   .navbar-list {
     border: solid 2px green;
     background-color: blueviolet;
@@ -48,12 +54,14 @@
     flex-direction: column;
     gap: 0;
   }
+  /* ? ---------- HEADER ---------- */
   .navbar-list-item {
     width: 100%;
     padding: 0.5rem 0rem;
     background-color: aqua;
     text-align: center;
   }
+  /* ? ---------- HEADER ---------- */
   .login {
     border-color: tomato;
     width: 100%;
@@ -62,12 +70,15 @@
     padding-bottom: 0.5rem;
     padding-left: 6rem;
   }
+  /* ? ---------- HEADER ---------- */
   .login-toggle-label {
     padding: 0 0.5rem;
   }
+  /* ? ---------- HEADER ---------- */
   .bx-user {
     font-size: 4rem;
   }
+  /* ? ---------- HEADER ---------- */
   .login-dropdown {
     transition: 2s all;
     display: flex;
@@ -76,67 +87,73 @@
     align-content: center;
     transform: translateY(-3000%);
   }
+  /* ? ---------- HEADER ---------- */
   .login-dropdown-item {
     width: 6rem;
     border: solid goldenrod;
     color: tomato;
     padding-left: 0;
   }
+  /* ? ---------- HEADER ---------- */
   .menu {
     width: 100%;
     background-color: #faf2f1;
   }
 }
 
-@media (max-width: 301px) {
-  .logo-img {
-    width: 6rem;
-    height: 5rem;
-  }
-  .logo-title {
-    font-size: 2rem;
-  }
-  .login-dropdown-item {
-    width: 5rem;
-  }
-  .login-dropdown-item a {
-    /* transform: translateY(-2000%); */
-    font-size: 0.6rem;
-  }
-}
-
-/* ? HEADER - FINAL */
-
-/* ? MAIN - INICIO  */
-
-/* TODO / SECTION HERO - INICIO */
 @media (max-width: 599px) {
+  /* ? ---------- HERO ---------- */
   .hero-banner-data-slogan {
     font-size: 1rem;
   }
 }
+
 @media (max-width: 490px) {
+  /* ? ---------- HERO ---------- */
   .hero-banner-data-title {
     font-size: 3.5rem;
     padding-bottom: 1rem;
   }
+}
+@media (max-width: 400px) {
+  /* ? ---------- ABOUT-US ---------- */
+  .about-us__title {
+    font-size: 2rem;
+  }
+  .about-us-info {
+    padding: 0.2rem;
+    gap: 0rem;
+  }
+  .about-us-info__data {
+    font-size: 1rem;
+    line-height: 1.1rem;
+    text-align: center;
+  }
+
   @media (max-width: 384px) {
+    /* ? ---------- HERO ---------- */
     .hero-banner-data {
       justify-content: space-between;
     }
+    /* ? ---------- HERO ---------- */
     .hero-banner-data-title {
       font-size: 3rem;
       padding-top: 0.1rem;
     }
+    /* ? ---------- HERO ---------- */
     .hero-banner-data-slogan {
       font-size: 1rem;
       padding-top: 0.1rem;
+      line-height: 1.2rem;
     }
   }
-  @media (max-width: 300px) {
+
+  @media (max-width: 320px) {
+    /* ? ---------- HERO ---------- */
     .hero-banner-data-title {
       font-size: 2.5rem;
     }
+    /* ? ---------- HERO ---------- */
     .hero-banner-data-slogan {
       font-size: 0.6rem;
       line-height: 0.7rem;
@@ -144,6 +161,49 @@
     }
   }
 }
-/* TODO / SECTION HERO - FINAL */
 
-/* ? MAIN - FINAL */
+@media (max-width: 301px) {
+  /* ? ---------- HEADER ---------- */
+  .logo-img {
+    width: 6rem;
+    height: 5rem;
+  }
+  /* ? ---------- HEADER ---------- */
+  .logo-title {
+    font-size: 2rem;
+  }
+  /* ? ---------- HEADER ---------- */
+  .login-dropdown-item {
+    width: 5rem;
+  }
+  /* ? ---------- HEADER ---------- */
+  .login-dropdown-item a {
+    /* transform: translateY(-2000%); */
+    font-size: 0.6rem;
+  }
+}
+
+/* ? ---------- HERO ---------- */
+@media (max-width: 249px) {
+  .hero-banner-data-title {
+    font-size: 1rem;
+  }
+  /* ? ---------- HERO ---------- */
+  .hero-banner-data-slogan {
+    font-size: 0.5rem;
+    line-height: 1rem;
+    padding-top: 1rem;
+  }
+  /* ? ---------- HERO ---------- */
+  .hero-banner-data {
+    min-block-size: none;
+    bottom: 1rem;
+  }
+}
+
+@media (max-width: 204px) {
+  /* ? ---------- HERO ---------- */
+  .hero-banner-data-title {
+    font-size: 1rem;
+  }
+}

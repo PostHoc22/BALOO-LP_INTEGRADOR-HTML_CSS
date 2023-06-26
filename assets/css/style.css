@@ -1,11 +1,15 @@
 /** Tipografia inicio */
-@import url("https://fonts.googleapis.com/css2?family=Amita&family=Dancing+Script:wght@700&family=Montserrat+Alternates:wght@400;700;900&family=Montserrat:wght@400;700;900&family=Roboto+Flex:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amita&family=Belanosima:wght@700&family=Caprasimo&family=Dancing+Script:wght@700&family=Kurale&family=Montserrat+Alternates:wght@400;700;900&family=Montserrat:wght@400;700;900&family=Raleway:wght@200;400&family=Roboto+Flex:wght@400;900&display=swap");
 
 /* 
 font-family: 'Amita', cursive;
+font-family: 'Belanosima', sans-serif;
+font-family: 'Caprasimo', cursive;
 font-family: 'Dancing Script', cursive;
+font-family: 'Kurale', serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Raleway', sans-serif;
 font-family: 'Roboto Flex', sans-serif;
 */
 
@@ -21,10 +25,16 @@ font-family: 'Roboto Flex', sans-serif;
   --text-shadow-offer: 1.2px 1.2px 1px darkgoldenrod;
   /* font-family */
   --font-family-logo-title: "Amita", cursive;
+  --font-family-section-title: "Dancing Script", cursive;
+  --font-family-section-data: "Kurale", serif;
+  --font-family-h3: "Raleway", sans-serif;
   /* font-size: */
   --font-size-logo-title: 2rem;
-  --font-size-h1: 5rem;
   --font-size-login-item: 0.8rem;
+  --font-size-h1: 5rem;
+  --font-size-h3: 1.1rem;
+  --font-size-section-title: 2.5rem;
+  --font-size-section-data: 1.3rem;
   /* bg-color: */
   --bg-offer: rgb(0, 0, 0);
   --bg-offer-2: #212121;
@@ -204,7 +214,7 @@ header {
 
 /** INICIO DE ESTILOS DEL MAIN */
 
-/* ? SECCION HERO */
+/* ? SECCION HERO - INICIO */
 .hero {
   width: 100%;
   display: flex;
@@ -253,3 +263,224 @@ header {
   min-block-size: 1px;
   padding-bottom: 1rem;
 }
+/* ? SECCION HERO - FINAL */
+
+/* ? SECCION ABOUT-US - INICIO */
+
+.about-us {
+  width: 100%;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+.about-us__title {
+  padding: 1rem;
+  font-family: var(--font-family-section-title);
+  font-size: var(--font-size-section-title);
+  text-align: center;
+}
+.about-us-info {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: rgba(139, 143, 142, 0.2);
+  border-radius: 1rem;
+  padding: 2rem;
+  background-image: url(/assets/img/banner-slides/caja-regalo02.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  background-attachment: fixed;
+  opacity: 0.9;
+}
+.about-us-info__data {
+  line-height: 1.6rem;
+  font-size: var(--font-size-section-data);
+  font-family: var(--font-family-section-data);
+  text-shadow: 0px 1px 1px rgb(104, 103, 103);
+  padding: 1rem;
+}
+/* ? SECCION ABOUT-US - FINAL */
+
+/* ? SECCION PRODUCT - INICIO */
+.product {
+  margin-top: 10rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.product-title {
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-family-section-title);
+  font-size: var(--font-size-section-title);
+}
+.product-subtitle {
+  width: 100%;
+  padding: 0 1rem;
+  font-family: var(--font-family-section-data);
+  font-size: var(--font-size-section-data);
+  color: #293241;
+  font-style: italic;
+}
+
+.product-cards-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 5rem 1.5rem;
+}
+.product-card-item {
+  /* width: 20.39rem; */
+  width: 20rem;
+  /* height: 27rem; */
+  display: flex;
+  flex-direction: column;
+  border: solid;
+}
+.card-img {
+  width: 100%;
+  height: 20rem;
+  background-image: url(/assets/img/products/cartucheras--01.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* background-position: center bottom; */
+}
+.card-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem 0rem;
+  padding: 1rem 0;
+}
+.card-info-title {
+  font-size: var(--font-size-h3);
+  color: rgb(77, 75, 75);
+  /* letter-spacing: 0.1rem; */
+  font-weight: bolder;
+}
+.card-info-title::after {
+  content: "-25% off";
+  color: red;
+  padding-left: 2rem;
+}
+.card-info-buys {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0rem 1rem;
+}
+.card-info-buys-price {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+.card-info-buys-listPrice {
+  text-decoration: line-through;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+button {
+  position: relative;
+  background-color: rgb(63, 92, 88);
+  border-radius: 1rem;
+  box-shadow: rgb(0, 0, 0) 0px 4px 0px 0px;
+  width: 7rem;
+  height: 2.2rem;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+button::before {
+  content: "";
+  background-color: rgb(65, 138, 101);
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 700ms ease-in-out;
+}
+
+button:hover::before {
+  width: 100%;
+}
+button:active {
+  transform: translateY(10%);
+}
+/* .product-cards-container {
+  width: 100%;
+  padding: 0rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem 2rem;
+}
+.product-card {
+  width: 20%;
+  min-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.product-card-img {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+  object-position: top;
+  filter: brightness(70%);
+}
+.product-card-img_back {
+  position: absolute;
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+  object-position: top;
+  transition: all 2s;
+}
+
+.product-card-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product-card-info-btn {
+  position: absolute;
+  opacity: 0.5;
+  border: solid pink;
+  
+  background-color: rgb(255, 255, 255, 0.5);
+  transform: translateY(-100%);
+}
+.product-card-info:hover .product-card-info-btn {
+  opacity: 1;
+  transition: all 1s;
+  
+  border-bottom: solid green;
+  transform: translateY(-20%);
+  width: 100%;
+  cursor: pointer;
+} */
+
+/* ? SECCION PRODUCT - FINAL */
