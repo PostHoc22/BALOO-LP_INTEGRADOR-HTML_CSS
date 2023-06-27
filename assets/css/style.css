@@ -1,5 +1,5 @@
 /** Tipografia inicio */
-@import url("https://fonts.googleapis.com/css2?family=Amita&family=Belanosima:wght@700&family=Caprasimo&family=Dancing+Script:wght@700&family=Kurale&family=Montserrat+Alternates:wght@400;700;900&family=Montserrat:wght@400;700;900&family=Raleway:wght@200;400&family=Roboto+Flex:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amita&family=Belanosima:wght@700&family=Caprasimo&family=Dancing+Script:wght@700&family=Kurale&family=Montserrat+Alternates:wght@400;700;900&family=Montserrat:wght@400;700;900&family=Outfit:wght@400;700;900&family=Raleway:wght@200;400&family=Roboto+Flex:wght@400;900&display=swap");
 
 /* 
 font-family: 'Amita', cursive;
@@ -9,6 +9,7 @@ font-family: 'Dancing Script', cursive;
 font-family: 'Kurale', serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Outfit', sans-serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto Flex', sans-serif;
 */
@@ -27,14 +28,19 @@ font-family: 'Roboto Flex', sans-serif;
   --font-family-logo-title: "Amita", cursive;
   --font-family-section-title: "Dancing Script", cursive;
   --font-family-section-data: "Kurale", serif;
-  --font-family-h3: "Raleway", sans-serif;
+  --font-family-section-cards: "Outfit", sans-serif;
   /* font-size: */
+  --font-size-offer: 0.9rem;
+  --font-size-icons: 1.5rem;
   --font-size-logo-title: 2rem;
   --font-size-login-item: 0.8rem;
   --font-size-h1: 5rem;
-  --font-size-h3: 1.1rem;
+  --font-size-hero-banner-slogan: 1.5rem;
   --font-size-section-title: 2.5rem;
+  --font-size-h3: 1rem;
   --font-size-section-data: 1.3rem;
+  --font-size-cards-prices: 1rem;
+  --font-size-buttons: 1rem;
   /* bg-color: */
   --bg-offer: rgb(0, 0, 0);
   --bg-offer-2: #212121;
@@ -58,20 +64,21 @@ html {
   box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Outfit", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   /* font-family: "Roboto Flex", sans-serif; */
 }
 
-/* body {
-  background-image: linear-gradient(
+body {
+  /* background-image: linear-gradient(
     to bottom right,
     #051937,
     #004d7a,
     #008793,
     #00bf72,
     #a8eb12
-  );
-} */
+  ); */
+}
 
 /** INICIO DE ESTILOS DEL HEADER */
 
@@ -99,7 +106,7 @@ header {
   text-align: center;
   text-shadow: var(--text-shadow-offer);
   letter-spacing: 0.1rem;
-  font-size: 0.9rem;
+  font-size: var(--font-size-offer);
 }
 .logo {
   width: 100%;
@@ -151,7 +158,7 @@ header {
 .bx-menu,
 .bxs-user,
 .bxs-cart {
-  font-size: 1.5rem;
+  font-size: var(--font-size-icons);
   transition: 0.3s ease-out all;
   cursor: pointer;
   padding: 0.2rem 0.2rem;
@@ -255,7 +262,7 @@ header {
   padding-top: 1rem;
 }
 .hero-banner-data-slogan {
-  font-size: 1.5rem;
+  font-size: var(--font-size-hero-banner-slogan);
   font-family: var(--font-family-logo-title);
   font-weight: 900;
   text-shadow: 1px 2px 10px black;
@@ -344,14 +351,26 @@ header {
   display: flex;
   flex-direction: column;
   border: solid;
+  cursor: pointer;
 }
-.card-img {
+/** dimensiones para la imagen de cada card */
+.card-img,
+.card-img-above,
+.card-img-back {
   width: 100%;
   height: 20rem;
-  background-image: url(/assets/img/products/cartucheras--01.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  /* background-position: center bottom; */
+  object-fit: cover;
+  object-position: center;
+}
+.card-img {
+  position: relative;
+}
+.card-img-back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
 }
 .card-info {
   width: 100%;
@@ -362,15 +381,16 @@ header {
   padding: 1rem 0;
 }
 .card-info-title {
+  font-family: var(--font-family-section-cards);
   font-size: var(--font-size-h3);
   color: rgb(77, 75, 75);
-  /* letter-spacing: 0.1rem; */
   font-weight: bolder;
+  text-align: center;
 }
 .card-info-title::after {
   content: "-25% off";
   color: red;
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 .card-info-buys {
   width: 100%;
@@ -381,13 +401,15 @@ header {
   gap: 0rem 1rem;
 }
 .card-info-buys-price {
+  font-family: var(--font-family-section-cards);
   font-weight: bolder;
-  font-size: 1.2rem;
+  font-size: var(--font-size-cards-prices);
   font-style: italic;
 }
 .card-info-buys-listPrice {
+  font-family: var(--font-family-section-cards);
   text-decoration: line-through;
-  font-size: 1.2rem;
+  font-size: var(--font-size-cards-prices);
   font-style: italic;
 }
 button {
@@ -399,14 +421,15 @@ button {
   height: 2.2rem;
   color: white;
   border: none;
-  font-size: 1rem;
+  font-size: var(--font-size-buttons);
   font-weight: bold;
   transition: all 0.3s ease-in-out;
   z-index: 1;
   overflow: hidden;
   cursor: pointer;
+  font-family: var(--font-family-section-cards);
 }
-
+/* microinteraccion */
 button::before {
   content: "";
   background-color: rgb(65, 138, 101);
@@ -425,6 +448,9 @@ button:hover::before {
 button:active {
   transform: translateY(10%);
 }
+
+/* microinteraccion */
+
 /* .product-cards-container {
   width: 100%;
   padding: 0rem;

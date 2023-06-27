@@ -36,3 +36,9 @@
   color: var(--text-pink);
   transition: 0.3s ease-out all;
 }
+
+/** cambio de imagen de las cards */
+.card-img-back:hover {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
