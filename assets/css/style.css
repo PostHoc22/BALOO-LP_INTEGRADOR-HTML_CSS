@@ -1,6 +1,8 @@
 /** Tipografia inicio */
 @import url("https://fonts.googleapis.com/css2?family=Amita&family=Belanosima:wght@700&family=Caprasimo&family=Dancing+Script:wght@700&family=Kurale&family=Montserrat+Alternates:wght@400;700;900&family=Montserrat:wght@400;700;900&family=Outfit:wght@400;700;900&family=Raleway:wght@200;400&family=Roboto+Flex:wght@400;900&display=swap");
 
+/* background-color: rgb(238, 238, 248, 0.5); */
+
 /* 
 font-family: 'Amita', cursive;
 font-family: 'Belanosima', sans-serif;
@@ -38,6 +40,7 @@ font-family: 'Roboto Flex', sans-serif;
   --font-size-hero-banner-slogan: 1.5rem;
   --font-size-section-title: 2.5rem;
   --font-size-h3: 1rem;
+  --font-size-h4: 1.5rem;
   --font-size-section-data: 1.3rem;
   --font-size-cards-prices: 1rem;
   --font-size-buttons: 1rem;
@@ -345,13 +348,14 @@ header {
   gap: 5rem 1.5rem;
 }
 .product-card-item {
-  /* width: 20.39rem; */
   width: 20rem;
-  /* height: 27rem; */
   display: flex;
   flex-direction: column;
-  border: solid;
   cursor: pointer;
+  /* border: solid 3px rgba(0, 0, 0, 0.2); */
+  /* border-radius: 10px; */
+  /* padding: 0.5rem; */
+  /* box-shadow: 1px 1px 24px rgba(0, 0, 0, 0.2); */
 }
 /** dimensiones para la imagen de cada card */
 .card-img,
@@ -361,6 +365,7 @@ header {
   height: 20rem;
   object-fit: cover;
   object-position: center;
+  /* border-radius: 1rem 1rem 0 0; */
 }
 .card-img {
   position: relative;
@@ -412,7 +417,15 @@ header {
   font-size: var(--font-size-cards-prices);
   font-style: italic;
 }
-button {
+.card-info-buys-btn {
+  width: 70%;
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: solid 3px rgba(0, 0, 0, 0.2);
+}
+.button {
   position: relative;
   background-color: rgb(63, 92, 88);
   border-radius: 1rem;
@@ -429,8 +442,8 @@ button {
   cursor: pointer;
   font-family: var(--font-family-section-cards);
 }
-/* microinteraccion */
-button::before {
+/** microinteraccion */
+.button::before {
   content: "";
   background-color: rgb(65, 138, 101);
   width: 0;
@@ -442,71 +455,105 @@ button::before {
   transition: all 700ms ease-in-out;
 }
 
-button:hover::before {
+.button:hover::before {
   width: 100%;
 }
-button:active {
+.button:active {
   transform: translateY(10%);
 }
+/* .button::after {
+  content: attr('<div class="code-block">Tu código aquí</div>');
+} */
 
-/* microinteraccion */
+/** microinteraccion */
 
-/* .product-cards-container {
-  width: 100%;
-  padding: 0rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem 2rem;
-}
-.product-card {
-  width: 20%;
-  min-width: fit-content;
-  display: flex;
-  flex-direction: column;
+/* ? SECCION PRODUCT - FINAL */
+
+/* 
+.contenedor {
   position: relative;
-}
-.product-card-img {
   width: 100%;
-  height: 18rem;
-  object-fit: cover;
-  object-position: top;
-  filter: brightness(70%);
-}
-.product-card-img_back {
-  position: absolute;
-  width: 100%;
-  height: 18rem;
-  object-fit: cover;
-  object-position: top;
-  transition: all 2s;
+  padding-bottom: 50%;
+  background-color: rgb(240, 240, 240);
 }
 
-.product-card-info {
+.div-superior {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 40%;
+  height: 60%;
+  background-color: #0026ff;
+  z-index: 2;
+}
+
+.div-inferior {
+  width: 40%;
+  height: 60%;
+  background-color: #00ff00;
+  position: absolute;
+  left: 40%;
+  top: 20%;
+} */
+
+.contact {
+  margin-top: 10rem;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  justify-content: space-evenly;
+  gap: 4rem;
+  background-image: url(/assets/img/banner-slides/comprando.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding-bottom: 2rem;
 }
-
-.product-card-info-btn {
-  position: absolute;
-  opacity: 0.5;
-  border: solid pink;
-  
-  background-color: rgb(255, 255, 255, 0.5);
-  transform: translateY(-100%);
-}
-.product-card-info:hover .product-card-info-btn {
-  opacity: 1;
-  transition: all 1s;
-  
-  border-bottom: solid green;
-  transform: translateY(-20%);
+.contact-title {
   width: 100%;
-  cursor: pointer;
-} */
-
-/* ? SECCION PRODUCT - FINAL */
+  margin-top: 1rem;
+  text-align: center;
+  font-size: var(--font-size-section-title);
+}
+.contact-info {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 4rem;
+}
+.contact-info-data {
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.contact-info-data > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 4rem;
+}
+.contact-info-data > div h4,
+.contact-info-data > div h4 i {
+  font-size: var(--font-size-h4);
+  margin: auto 0;
+  /* color: rgb(241, 164, 14); */
+  color: rgb(65, 138, 101);
+  font-weight: bolder;
+}
+.contact-container-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact-container-form-customer {
+  display: flex;
+}
