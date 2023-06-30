@@ -323,6 +323,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  padding-bottom: 4rem;
 }
 .product-title {
   width: 100%;
@@ -496,64 +497,71 @@ header {
   top: 20%;
 } */
 
+/* ? SECCION CONTACT - INICIO */
+
 .contact {
-  margin-top: 10rem;
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 4rem;
-  background-image: url(/assets/img/banner-slides/comprando.webp);
-  background-repeat: no-repeat;
+  height: auto;
+  margin-top: 10rem;
+  text-align: center;
+  background-image: linear-gradient(
+      to right,
+      rgb(0, 0, 0, 0.5),
+      rgb(0, 0, 0, 0.1)
+    ),
+    url(/assets/img/banner-slides/comprando.webp);
   background-size: cover;
   background-position: top center;
-  padding-bottom: 2rem;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #ffffff;
+  text-shadow: black 1px -1px 1px;
 }
 .contact-title {
   width: 100%;
-  margin-top: 1rem;
-  text-align: center;
+  padding: 2rem 0rem;
   font-size: var(--font-size-section-title);
+  font-family: var(--font-family-section-title);
+  text-align: center;
 }
 .contact-info {
+  margin: 2rem 0rem;
   width: 100%;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 4rem;
-}
-.contact-info-data {
-  width: 25%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   align-items: flex-start;
-  gap: 2rem;
 }
-.contact-info-data > div {
+.contact-data {
+  flex: 1 1 40%;
+  border: pink solid 4px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem 0rem;
+}
+.contact-data > div {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  height: 4rem;
+  align-items: center;
 }
-.contact-info-data > div h4,
-.contact-info-data > div h4 i {
+.contact-data > div h4 {
   font-size: var(--font-size-h4);
   margin: auto 0;
   /* color: rgb(241, 164, 14); */
   color: rgb(65, 138, 101);
   font-weight: bolder;
 }
-.contact-container-form {
-  width: 50%;
+
+.contact-form {
+  flex: 1 1 40%;
+  border: white solid 4px;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  flex-wrap: wrap;
 }
-.contact-container-form-customer {
-  display: flex;
-}
+/* ? SECCION CONTACT - FINAL */
