@@ -631,6 +631,10 @@ header {
   width: 18rem;
 }
 #message {
-  width: 18rem;
+  font-size: 1.2rem;
+  border: 0;
+  border-bottom: 0.2rem solid rgb(228, 224, 224);
+  background-color: transparent;
+  outline: none;
 }
 /* ? SECCION CONTACT - FINAL */
