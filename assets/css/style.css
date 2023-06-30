@@ -572,6 +572,7 @@ header {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
   gap: 2rem;
   padding: 1rem 0;
 }
@@ -580,8 +581,8 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
-  gap: 2rem;
+  justify-content: center;
+  gap: 4rem;
   padding: 0rem;
 }
 .contact-form-customer > div {
@@ -608,29 +609,35 @@ header {
 #email::placeholder,
 #name::placeholder,
 #message::placeholder {
-  color: #eeebeb;
+  color: #bebcbc;
   font-style: italic;
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 }
 .contact-fomt-customer_message {
-  width: 100%s;
+  /* flex: 1 1 100%; */
+  width: 18rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   vertical-align: top;
 }
 .contact-form-customer_message label {
-  padding-left: 1rem;
+  width: 18rem;
+  /* padding-right: 2rem; */
   /* vertical-align: top; */
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   padding-bottom: 1rem;
-  text-align: left;
+  justify-items: center;
   font-size: var(--font-size-h4);
   color: rgb(77, 163, 120);
   font-weight: bolder;
   width: 18rem;
+  padding-top: 2rem;
 }
 #message {
+  width: 18rem;
   font-size: 1.2rem;
   border: 0;
   border-bottom: 0.2rem solid rgb(228, 224, 224);

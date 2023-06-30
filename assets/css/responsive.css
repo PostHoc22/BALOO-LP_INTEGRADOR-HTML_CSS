@@ -5,6 +5,13 @@
   }
 }
 
+@media (min-width: 1312px) {
+  /* ? ---------- CONTACT ---------- */
+  #message {
+    width: 38rem;
+  }
+}
+
 /** para tablets */
 /** para celular */
 
@@ -163,6 +170,26 @@
       line-height: 0.7rem;
       padding-top: 1rem;
     }
+  }
+}
+
+@media (max-width: 330px) {
+  /* ? ---------- CONTACT ---------- */
+  .contact-form-customer > div {
+    width: 10rem;
+  }
+  .contact-fomt-customer_message {
+    width: 10rem;
+  }
+  .contact-form-customer_message label {
+    width: auto;
+  }
+  #email,
+  #name,
+  #message {
+    font-size: 0.8rem;
+    width: 10rem;
+    padding: 0;
   }
 }
 
