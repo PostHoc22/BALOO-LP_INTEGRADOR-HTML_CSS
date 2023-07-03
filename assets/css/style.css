@@ -24,6 +24,7 @@ font-family: 'Roboto Flex', sans-serif;
   --text-gray-light: #cecece;
   --text-gray-dark: #383737;
   --text-pink: #ff0068;
+  --text-green: rgb(13, 228, 120);
   /* text-shadow */
   --text-shadow-offer: 1.2px 1.2px 1px darkgoldenrod;
   /* font-family */
@@ -47,13 +48,22 @@ font-family: 'Roboto Flex', sans-serif;
   /* bg-color: */
   --bg-offer: rgb(0, 0, 0);
   --bg-offer-2: #212121;
-  --bg-navbar: #293241;
+  --bg-navbar: linear-gradient(
+    to right bottom,
+    #d0f6f9,
+    #c9f4f5,
+    #c2f1f0,
+    #bbefeb,
+    #b5ece5
+  );
   --bg-menu-hover: rgba(255, 0, 104, 0.8);
   /* border-shadow */
   --bs-search-pink: 1px 1px 10px 4px #ff0068;
+  --bs-green: 1px 1px 10px 4px rgb(21, 240, 130);
   --bs-search-white: 1px 1px 10px 4px white;
   /* border-color */
   --bc-pink: rgba(255, 0, 104, 0.8);
+  --bc-pink-light: rgb(255, 69, 144);
 }
 
 html {
@@ -70,17 +80,6 @@ html {
   font-family: "Outfit", sans-serif;
   /* font-family: "Montserrat", sans-serif; */
   /* font-family: "Roboto Flex", sans-serif; */
-}
-
-body {
-  /* background-image: linear-gradient(
-    to bottom right,
-    #051937,
-    #004d7a,
-    #008793,
-    #00bf72,
-    #a8eb12
-  ); */
 }
 
 /** INICIO DE ESTILOS DEL HEADER */
@@ -141,6 +140,8 @@ header {
   align-items: center;
   font-weight: 700;
   border-top: 2px solid #383737;
+  border-bottom: 2px solid #383737;
+  background-image: var(--bg-navbar);
 }
 .navbar-dropdown {
   width: 100%;
@@ -182,6 +183,9 @@ header {
   gap: 0.5rem;
   justify-content: space-around;
   align-items: center;
+}
+.navbar-list-item {
+  color: #293241;
 }
 .login {
   width: 20%;
@@ -338,6 +342,7 @@ header {
   font-size: var(--font-size-section-data);
   color: #293241;
   font-style: italic;
+  text-align: center;
 }
 
 .product-cards-container {
@@ -353,10 +358,11 @@ header {
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  /* border: solid 3px rgba(0, 0, 0, 0.2); */
-  /* border-radius: 10px; */
-  /* padding: 0.5rem; */
-  /* box-shadow: 1px 1px 24px rgba(0, 0, 0, 0.2); */
+  border: solid 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 1px 1px 24px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  transition: all 0.4s ease-in-out;
 }
 /** dimensiones para la imagen de cada card */
 .card-img,
@@ -366,7 +372,7 @@ header {
   height: 20rem;
   object-fit: cover;
   object-position: center;
-  /* border-radius: 1rem 1rem 0 0; */
+  border-radius: 1rem;
 }
 .card-img {
   position: relative;
@@ -428,7 +434,7 @@ header {
 }
 .button {
   position: relative;
-  background-color: rgb(63, 92, 88);
+  background-color: rgba(252, 87, 114, 0.973);
   border-radius: 1rem;
   box-shadow: rgb(0, 0, 0) 0px 4px 0px 0px;
   width: 7rem;
@@ -613,7 +619,8 @@ header {
   font-size: var(--font-size-h4);
   margin: auto 0;
   /* color: rgb(241, 164, 14); */
-  color: rgb(77, 163, 120);
+  /* color: rgb(77, 163, 120); */
+  color: var(--text-pink);
   font-weight: bolder;
 }
 .contact-data > div p {
@@ -645,7 +652,8 @@ header {
   flex-direction: column;
   text-align: left;
   font-size: var(--font-size-h4);
-  color: rgb(77, 163, 120);
+  /* color: rgb(77, 163, 120); */
+  color: var(--text-pink);
   font-weight: bolder;
   gap: 0.5rem;
 }
@@ -688,7 +696,8 @@ header {
   padding-bottom: 1rem;
   justify-items: center;
   font-size: var(--font-size-h4);
-  color: rgb(77, 163, 120);
+  /* color: rgb(77, 163, 120); */
+  color: var(--text-pink);
   font-weight: bolder;
   width: 18rem;
   padding-top: 2rem;
@@ -748,8 +757,19 @@ footer {
   text-align: center;
   font-size: 1rem;
 }
+.footer-networks a:visited {
+  color: #293241;
+}
 .footer-networks i {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  /* border: solid; */
+  border-radius: 50%;
+  padding: 0.1rem;
+}
+.footer-networks i:hover {
+  box-shadow: var(--bs-search-pink);
+  transition: all 0.3s;
+  color: var(--bc-pink);
 }
 .footer-logo {
   width: 100%;
