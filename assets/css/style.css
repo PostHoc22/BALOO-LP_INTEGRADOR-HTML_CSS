@@ -69,6 +69,7 @@ font-family: 'Roboto Flex', sans-serif;
 html {
   scroll-behavior: smooth;
   /* overflow-y: scroll; */
+  scroll-padding-top: 9rem;
 }
 
 * {
@@ -142,6 +143,9 @@ header {
   border-top: 2px solid #383737;
   border-bottom: 2px solid #383737;
   background-image: var(--bg-navbar);
+  position: fixed;
+  z-index: 5;
+  top: 5.5rem;
 }
 .navbar-dropdown {
   width: 100%;
