@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Outfit", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  /* font-family: "Roboto Flex", sans-serif; */
+}
+
+.logueo {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/img/banner-slides/fondo-login.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.logueo-container {
+  width: 40%;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: flex-start;
+  align-items: center;
+  border: solid wheat 1px;
+  /* background-color: rgb(204, 204, 204, 0.9); */
+  background-image: linear-gradient(
+    to right top,
+    #b4babb,
+    #c2c6c8,
+    #d1d3d5,
+    #dfe0e2,
+    #ededee,
+    #eaeaeb,
+    #e8e8e8,
+    #e5e5e5,
+    #d1d1d1,
+    #bebebe,
+    #ababab,
+    #999999
+  );
+}
+.logueo-form {
+  width: 90%;
+  height: 200px;
+  border: solid palevioletred 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}

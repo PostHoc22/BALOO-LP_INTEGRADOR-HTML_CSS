@@ -559,22 +559,21 @@ header {
   margin-top: 10rem;
   text-align: center;
   background-image: linear-gradient(
-      to right,
+      to top,
       rgb(0, 0, 0, 0.3),
       rgb(0, 0, 0, 0.5)
     ),
-    url(/assets/img/banner-slides/caja-regalo.webp);
+    url(/assets/img/banner-slides/bolso.webp);
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   color: #ffffff;
-  /* text-shadow: black 0.1em 0.1em 0.2em;
-  text-shadow: -1px -1px white, 1px 1px #333;
-  text-shadow: 1px 1px white, -1px -1px #333; */
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -1px -1px 5px rgb(190, 187, 187), 1px 1px #333;
+  /* text-shadow: 1px 1px white, -1px -1px #333; */
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
   overflow-x: hidden;
   border-radius: 1rem;
   box-shadow: 1px 1px 30px rgb(0, 0, 0);
@@ -589,6 +588,7 @@ header {
   font-size: var(--font-size-section-title);
   font-family: var(--font-family-section-title);
   text-align: center;
+  text-shadow: -1px -1px 10px var(--bc-pink), 1px 1px #333;
 }
 .contact-info {
   margin: 1rem 0rem;
@@ -675,7 +675,7 @@ header {
 #message::placeholder {
   color: #e7e6e6;
   font-style: italic;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -1px -1px 5px var(--bc-pink), 1px 1px #333;
   background-color: transparent;
 }
 .contact-fomt-customer_message {
