@@ -436,7 +436,7 @@ header {
   position: relative;
   background-color: rgba(252, 87, 114, 0.973);
   border-radius: 1rem;
-  box-shadow: rgb(0, 0, 0) 0px 4px 0px 0px;
+  box-shadow: rgb(0, 0, 0) 0px 4px 8px 0px;
   width: 7rem;
   height: 2.2rem;
   color: white;

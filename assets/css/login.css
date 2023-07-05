@@ -1,3 +1,5 @@
+/**ESTILOS DE MAIN DE LOGIN.HTML */
+
 * {
   padding: 0;
   margin: 0;
@@ -12,6 +14,7 @@
 .logueo {
   width: 100%;
   height: 100vh;
+  padding: 1rem 0rem;
   background-image: url(/assets/img/banner-slides/fondo-login.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,15 +26,15 @@
   align-items: center;
 }
 .logueo-container {
-  width: 40%;
-  height: 75vh;
+  width: 33%;
+  min-width: 14rem;
+  height: auto;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   justify-content: flex-start;
   align-items: center;
-  border: solid wheat 1px;
-  /* background-color: rgb(204, 204, 204, 0.9); */
+  border-radius: 1rem;
   background-image: linear-gradient(
     to right top,
     #b4babb,
@@ -47,13 +50,58 @@
     #ababab,
     #999999
   );
+  padding-bottom: 1rem;
 }
 .logueo-form {
   width: 90%;
-  height: 200px;
-  border: solid palevioletred 1px;
+  height: 65%;
+  /* border: solid palevioletred 1px; */
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 1.2rem;
   align-items: center;
+  text-align: center;
+}
+.logueo-form > input {
+  width: 80%;
+  height: 2.7rem;
+  border-radius: 1rem;
+  border: none;
+  /* outline: none; */
+}
+.logueo-form > p {
+  font-size: 1rem;
+}
+.logueo-form > p a {
+  color: tomato;
+  font-weight: bolder;
+}
+
+/** MICROINTERACCIONES DOCUMENTO LOGIN.HTML  */
+.logueo-form > input::placeholder {
+  text-align: center;
+  font-size: 1rem;
+  /* color: rgb(77, 75, 75); */
+  /* font-style: italic; */
+}
+.logueo-form > input:focus {
+  color: rgb(88, 81, 81);
+  text-align: center;
+  font-size: 1rem;
+}
+.logueo-form > p a:hover {
+  text-shadow: 0px 0px 5px turquoise;
+}
+
+/** RESPONSIVIDAD DOCUMENTO LOGIN.HTML */
+@media (max-width: 940px) {
+  /*? ---------- DOCUMENTO LOGIN.HTML ---------- */
+  .logueo-form > input {
+    width: 90%;
+  }
+  .logueo-form > input::placeholder {
+    font-size: 0.8rem;
+  }
 }

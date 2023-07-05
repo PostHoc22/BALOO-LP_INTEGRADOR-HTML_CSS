@@ -65,7 +65,7 @@
   width: 100%;
 }
 .button:active {
-  transform: translateY(10%);
+  transform: translateY(7%);
 }
 
 /** botontes de tipo submit */
