@@ -53,7 +53,7 @@ font-family: 'Roboto Flex', sans-serif;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  justify-content: flex-start;
+  justify-content:center;
   align-items: center;
   border-radius: 1rem;
   background-image: linear-gradient(
