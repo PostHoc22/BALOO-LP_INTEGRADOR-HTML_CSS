@@ -67,10 +67,12 @@
     from {
       transform: translateX(-80%);
       opacity: 0;
+      display: none;
     }
     to {
       transform: translateX(-10%);
       opacity: 1;
+      display: block;
     }
   }
   /* desplazar menu-login hacia la izquierda con transparencia en el proceso */
