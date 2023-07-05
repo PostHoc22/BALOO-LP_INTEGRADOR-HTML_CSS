@@ -57,9 +57,11 @@
   @keyframes opacity-loadPage-toogle {
     from {
       opacity: 0;
+      display: none;
     }
     to {
       opacity: 0;
+      display: none;
     }
   }
   /* desplazar hacia la derecha a los items de "menu-login" cuando esten activados y darles una visibilidad en forma gradual */
@@ -80,10 +82,12 @@
     from {
       transform: translateX(-10%);
       opacity: 1;
+      display: block;
     }
     to {
       transform: translateX(-80%);
       opacity: 0;
+      display: none;
     }
   }
   /** llamados para resoluciones hasta 679px : */
