@@ -23,7 +23,7 @@ font-family: 'Roboto Flex', sans-serif;
 * {
   padding: 0;
   margin: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
   font-family: "Outfit", sans-serif;
