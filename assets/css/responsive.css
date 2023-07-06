@@ -43,13 +43,7 @@
   /* ? ---------- HEADER ---------- */
   #navbar-toggle:checked + .navbar-dropdown {
     display: flex;
-    /* flex-direction: column;
-    align-items: center;
-    background-image: var(--bg-navbar); */
     z-index: 1;
-    /* transform: translateX(0);
-    transition: all 3s ease-in-out;
-    opacity: 1; */
   }
   /* ? ---------- HEADER ---------- */
   #navbar-search {
