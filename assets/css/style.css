@@ -83,11 +83,11 @@ html {
 
 /** BOTON PARA VOLVER AL INCIO */
 .btn-init {
-  width: 5rem;
-  height: 5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  right: 10px;
   z-index: 50;
   display: flex;
   align-items: center;
@@ -95,13 +95,13 @@ html {
   border-radius: 2rem;
 }
 .btn-start {
-  width: 5rem;
-  height: 5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 2rem;
   border: solid 1px;
-  font-size: 4rem;
+  font-size: 2rem;
   color: black;
-  background-color: rgb(193, 240, 239);
+  background-color: rgb(211, 231, 222);
   z-index: 1;
 }
 .btn-init a:link {
