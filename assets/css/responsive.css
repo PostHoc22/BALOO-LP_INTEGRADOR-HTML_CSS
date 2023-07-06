@@ -28,21 +28,28 @@
   /* ? ---------- HEADER ---------- */
   .navbar-dropdown {
     position: absolute;
-    top: 0;
-    display: none;
-    border: solid 1px rgb(18, 27, 150);
+    top: 48px;
+    /* display: none; */
+    flex-direction: column;
+    /* border: solid 1px rgb(18, 27, 150); */
     width: 100%;
     height: max-content;
     justify-content: center;
     align-items: center;
     z-index: 1;
+    background-image: var(--bg-navbar);
+    transform: translateX(-100%);
   }
   /* ? ---------- HEADER ---------- */
   #navbar-toggle:checked + .navbar-dropdown {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column;
     align-items: center;
-    background-image: var(--bg-navbar);
+    background-image: var(--bg-navbar); */
+    z-index: 1;
+    /* transform: translateX(0);
+    transition: all 3s ease-in-out;
+    opacity: 1; */
   }
   /* ? ---------- HEADER ---------- */
   #navbar-search {

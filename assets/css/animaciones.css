@@ -87,7 +87,7 @@
     to {
       transform: translateX(-80%);
       opacity: 0;
-      display: none;
+      display: nonegit add;
     }
   }
   /** llamados para resoluciones hasta 679px : */
@@ -107,6 +107,54 @@
 }
 /* todo: para resoluciones hasta 711px - final */
 /*?--- ANIMACION PARA MENU-LOGIN - FINAL --- */
+
+/*?--- ANIMACION PARA MENU DESPLEGABLE (MENU TOGGLE) - INICIO --- */
+/** declaraciones: */
+/* para dar opacidad a menu-toogle a recagar la pagina*/
+@keyframes opacity-loadPage-toogle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* para deslizar entrada del menu-toogle desde la izquierda */
+@keyframes toogle-slide-left-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* para deslizar salida del menu-toogle hacia la izquierda */
+@keyframes toogle-slide-left-out {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+/** llamados a las animaciones: */
+/* para apertura de menu-toogle */
+#navbar-toggle:checked + .navbar-dropdown {
+  animation: toogle-slide-left-in 1s ease-in-out forwards,
+    opacity-loadPage-toogle 1s ease-in;
+}
+/* para cierre de menu-toogle */
+.navbar-dropdown {
+  animation: toogle-slide-left-out 1s ease-in-out,
+    opacity-loadPage-toogle 1s ease-in;
+}
+
+/*?--- ANIMACION PARA MENU DESPLEGABLE (MENU TOGGLE) - FINAL --- */
+
 /* ! HEADER - FINAL */
 
 /* ! MAIN - INICIO */

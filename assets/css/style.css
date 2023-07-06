@@ -212,6 +212,20 @@ header {
   font-size: var(--font-size-login-item);
   color: var(--text-gray-dark);
 }
+.glass {
+  position: absolute;
+  padding: 100vh;
+  height: 100vh;
+  top: 317px;
+  left: 0;
+  z-index: 1;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: none;
+}
+#navbar-toggle:checked ~ .glass {
+  display: block;
+}
 
 .cart {
   display: flex;
